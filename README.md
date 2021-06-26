@@ -1,18 +1,18 @@
-[![Build Status](https://travis-ci.org/bitcoinj/bitcoinj.png?branch=master)](https://travis-ci.org/bitcoinj/bitcoinj)   [![Coverage Status](https://coveralls.io/repos/bitcoinj/bitcoinj/badge.png?branch=master)](https://coveralls.io/r/bitcoinj/bitcoinj?branch=master) 
+[![Build Status](https://travis-ci.org/bitcoinj/bitcoinj.png?branch=master)](https://travis-ci.org/bitcoinj/bitcoinj) [![Coverage Status](https://coveralls.io/repos/bitcoinj/bitcoinj/badge.png?branch=master)](https://coveralls.io/r/bitcoinj/bitcoinj?branch=master)
 
 [![Visit our IRC channel](https://kiwiirc.com/buttons/irc.freenode.net/bitcoinj.png)](https://kiwiirc.com/client/irc.freenode.net/bitcoinj)
 
-### Welcome to bitcoinj
+### Welcome to newbullj
 
-The bitcoinj library is a Java implementation of the Bitcoin protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of Bitcoin Core. It comes with full documentation and some example apps showing how to use it.
+The newbullj library is a Java implementation of the NewBull protocol, which allows it to maintain a wallet and send/receive transactions without needing a local copy of NewBull Core. It comes with full documentation and some example apps showing how to use it.
 
 ### Technologies
 
-* Java 7+ and Gradle 3.4+ for the `core` module
-* Java 8+ and Gradle 3.4+ for `tools` and `examples`
-* Java 11+ and Gradle 4.10+ for the JavaFX-based `wallettemplate`
-* [Gradle](https://gradle.org/) - for building the project
-* [Google Protocol Buffers](https://github.com/google/protobuf) - for use with serialization and hardware communications
+-   Java 7+ and Gradle 3.4+ for the `core` module
+-   Java 8+ and Gradle 3.4+ for `tools` and `examples`
+-   Java 11+ and Gradle 4.10+ for the JavaFX-based `wallettemplate`
+-   [Gradle](https://gradle.org/) - for building the project
+-   [Google Protocol Buffers](https://github.com/google/protobuf) - for use with serialization and hardware communications
 
 ### Getting started
 
@@ -22,13 +22,16 @@ To get started, it is best to have the latest JDK and Gradle installed. The HEAD
 
 Official builds are currently using with JDK 8, even though the `core` module is compatible with JDK 7 and later.
 
-To perform a full build (*including* JavaDocs and unit/integration *tests*) use JDK 8+
+To perform a full build (_including_ JavaDocs and unit/integration _tests_) use JDK 8+
+
 ```
 gradle clean build
 ```
+
 If you are running JDK 11 or later and Gradle 4.10 or later, the build will automatically include the JavaFX-based `wallettemplate` module. The outputs are under the `build` directory.
 
-To perform a full build *without* unit/integration *tests* use:
+To perform a full build _without_ unit/integration _tests_ use:
+
 ```
 gradle clean assemble
 ```
@@ -51,6 +54,5 @@ Building apps with official releases of **bitcoinj** is covered in the [tutorial
 
 If you want to develop or test your app with a [Jitpack](https://jitpack.io)-powered build of the latest `master` or `release-0.15` branch of **bitcoinj** follow the dynamically-generated instructions for that branch by following the correct link.
 
-
-* [master](https://jitpack.io/#bitcoinj/bitcoinj/master-SNAPSHOT) branch
-* [release-0.15](https://jitpack.io/#bitcoinj/bitcoinj/release-0.15-SNAPSHOT) branch
+-   [master](https://jitpack.io/#bitcoinj/bitcoinj/master-SNAPSHOT) branch
+-   [release-0.15](https://jitpack.io/#bitcoinj/bitcoinj/release-0.15-SNAPSHOT) branch
